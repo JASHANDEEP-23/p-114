@@ -1,0 +1,31 @@
+.heading{
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+}
+
+#snapshot:hover 
+{
+background-color: rgb(129, 237, 28);
+color: rgb(17, 17, 16);
+font-weight: bolder;
+}
+
+canvas{
+    border: 5px grey solid;
+    animation-name: shading;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    margin-top: 50px;
+}
+
+@keyframes shading {
+    /* from{box-shadow:3px 3px 45px red;}
+    to{box-shadow:3px 3px 45px green;} */
+
+    0%{box-shadow:3px 3px 95px rgb(249, 209, 133);}
+    25%{box-shadow:3px 3px 95px rgb(111, 232, 111);}
+    50%{box-shadow:3px 3px 95px  skyblue;}
+    100%{box-shadow:3px 3px 95px pink;}
+    
+}
